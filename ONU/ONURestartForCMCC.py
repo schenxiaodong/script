@@ -1,6 +1,9 @@
 import requests
 import re
 
+# 移动光猫重启
+# 设备型号 HS8546V5 软件版本 V5R020C00S200
+
 # 首先获取 GetRandCount
 GetRandCountUrl = "http://192.168.1.1/asp/GetRandCount.asp"
 GetRandCountResponse = requests.request("POST", GetRandCountUrl, headers={}, data={})
